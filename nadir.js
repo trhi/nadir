@@ -5,6 +5,12 @@
 
 
 let img;
+let images = ["images/guaches-nadir-cortado-1.jpg",
+"images/guaches-nadir-cortado-39L.jpg",
+"images/guaches-nadir-cortado-581.jpg",
+"images/guaches-nadir-cortado-1660.jpg",
+"images/guaches-nadir-cortado-1773.jpg",
+]
 let canvas;
 var erasing;
 //var eraserColor = color(255,255,255,127);
@@ -18,7 +24,9 @@ function preload(){
 
 function setup(){
 
-  img = createImg("images/guaches-nadir-cortado-1.jpg");
+  img = createImg(random(images));
+
+  //img = createImg("images/guaches-nadir-cortado-1.jpg");
 
   img.position(0, 0);
   img.size(1250, 850);
