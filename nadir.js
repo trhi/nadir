@@ -32,3 +32,9 @@ function draw(){
   ellipse(mouseX, mouseY, eraserSize, eraserSize);
   noErase();
 }
+
+function touchMoved() {
+  draw();
+  // prevent default
+  return false;
+}
