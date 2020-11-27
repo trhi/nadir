@@ -13,8 +13,8 @@ var erasing;
 var eraserSize = 100;
 
 function setup(){
-  var img = createImg(images[0]);
-  img.style("max-height", "700px");
+  var img = createImg(random(images));
+  img.style("max-height", "650px");
   noStroke();
   canvas = createCanvas(canvasX, canvasY);
   canvas.position(0, 0);
